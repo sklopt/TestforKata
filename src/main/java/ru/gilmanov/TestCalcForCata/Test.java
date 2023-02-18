@@ -1,11 +1,18 @@
+package ru.gilmanov.TestCalcForCata;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 import java.util.Scanner;
 
+
 public class Test {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите в одну строку только арабские или только римские числа " +
+                "от 01 до 10 включительно и знак сложения, " +
+                "вычитания, умножения или деления и узнай результат вычисления. " +
+                "Сначала введи первое число, пробел, потом знак, снова пробел и второе число");
         String line = scanner.nextLine();
         scanner.close();
         System.out.println(Main.calc(line));
